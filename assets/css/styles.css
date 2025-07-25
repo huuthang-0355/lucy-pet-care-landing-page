@@ -4,11 +4,13 @@
 
 html {
     font-size: 62.5%;
+    height: 10000px;
 }
 
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
+    background: #fffaf5;
 }
 
 /*  Common */
@@ -93,4 +95,133 @@ button {
 
 .header-action__btn:hover {
     opacity: 0.7;
+}
+
+/* Hero */
+.hero {
+    margin-top: 74px;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__media {
+    position: relative;
+    display: flex;
+}
+
+.hero__img-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 388px;
+    height: 488px;
+    border-radius: 16px;
+    background: #fe997b;
+    border: 3px solid #fff;
+}
+
+.hero__img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.hero__decor {
+    position: absolute;
+    z-index: -1;
+}
+
+.hero__decor--left {
+    left: -58px;
+    bottom: 10px;
+}
+
+.hero__decor--right {
+    right: -45px;
+    top: 17px;
+}
+
+.hero__img-wrap--small {
+    position: absolute;
+    bottom: -58px;
+    right: -162px;
+    width: 186px;
+    height: 244px;
+    border-radius: 16px;
+    background: #faa7ad;
+    border: 2px solid #f7dddf;
+}
+
+.hero__img--small {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.hero__list {
+    position: absolute;
+    bottom: -94px;
+    right: 9px;
+    width: 250px;
+    height: 156px;
+    padding: 18px 14px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+}
+
+.hero-list-item {
+    display: flex;
+    align-items: center;
+}
+
+.hero-list-item__thumb {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: #fec23f;
+    object-fit: cover;
+}
+
+.hero-list-item__info {
+    color: #181e52;
+    font-family: Sora, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.hero-list-item__skeleton {
+    margin-top: 7px;
+    width: 118px;
+    height: 4px;
+    border-radius: 10px;
+    opacity: 0.08;
+    background: #000958;
+}
+
+.hero-list-item__skeleton--small {
+    /* margin-top: 6px; */
+    width: 39px;
+}
+
+.hero__list hr {
+    margin: 20px 0;
+    width: 222px;
+    height: 2px;
+    background: #f2f2f2;
+    border-radius: 10px;
+    border: none;
+}
+
+.hero-list-item__thumb--blue {
+    background: #c6e2fa;
 }
