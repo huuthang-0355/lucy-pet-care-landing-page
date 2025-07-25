@@ -41,7 +41,9 @@ button {
 
 .btn {
     --height: 56px;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     height: var(--height);
     min-width: 131px;
     border-radius: 25px;
@@ -51,6 +53,18 @@ button {
     text-align: center;
     font-size: 1.4rem;
     font-weight: 600;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.btn__icon {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin-top: 4px;
+    margin-left: 8px;
 }
 
 /* Header */
@@ -224,4 +238,58 @@ button {
 
 .hero-list-item__thumb--blue {
     background: #c6e2fa;
+}
+
+.hero__content {
+    margin-left: 283px;
+}
+
+.hero__heading {
+    color: #000958;
+    font-size: 6.6rem;
+    font-weight: 800;
+    line-height: 1.15; /* 115.152% */
+}
+
+.hero__desc {
+    margin-top: 24px;
+    width: 75%;
+    color: #656689;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.875; /* 187.5% */
+}
+
+.hero__row {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.hero__row-btn {
+    min-width: 189px;
+    --height: 60px;
+    border-radius: 31px;
+    background: #ff5b2e;
+    box-shadow: 0 13px 26px -8px rgba(255, 91, 46, 0.42);
+    border: none;
+    color: #fff;
+    /* text-align: center; */
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.hero__cta-link {
+    margin-left: 24px;
+    color: #000958;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1; /* 100% */
+}
+
+.hero__cta-link:hover {
+    text-decoration: underline;
 }
