@@ -317,6 +317,7 @@ button {
 
 .about__inner {
     display: grid;
+    row-gap: 146px;
     grid-template-columns: 1fr 1fr;
     align-items: center;
 }
@@ -448,4 +449,143 @@ button {
     right: -51px;
     top: 157px;
     z-index: -3;
+}
+
+.about__img-wrap--bottom {
+    width: 458px;
+    margin-left: 0;
+    border-radius: 18px;
+    border: 2px solid #fff;
+    background: linear-gradient(180deg, #c6e2fa 0%, #94c2ea 100%);
+    box-shadow: 0 17px 77px -8px rgba(190, 165, 139, 0.17);
+}
+
+.about__img-wrap--bottom::after {
+    content: none;
+}
+
+.about__img--bottom {
+    width: 100%;
+    object-fit: cover;
+}
+
+.about__decor--bottom {
+    position: absolute;
+}
+
+.about__decor--bottom:nth-child(1) {
+    top: 12.5px;
+    right: 63px;
+}
+
+.about__decor--bottom:nth-child(2) {
+    top: -16px;
+    right: 13px;
+}
+
+.about__decor--bottom:nth-child(3) {
+    top: 33px;
+    right: -21px;
+}
+
+.about__decor--bottom:nth-child(4) {
+    top: 268px;
+    right: -33px;
+}
+
+.about__decor--bottom:nth-child(5) {
+    top: 336px;
+    right: 19px;
+}
+
+.about__decor--bottom:nth-child(6) {
+    bottom: -55px;
+    right: -42px;
+}
+
+.about__content-heading {
+    width: 543px;
+}
+
+.about__content-desc {
+    width: 511px;
+    margin-top: 24px;
+}
+
+.about__row {
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about__row--item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.about__row--item:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    bottom: -14px;
+    width: 95px;
+    height: 2px;
+    background: #ff5b2e;
+    border-radius: 1px;
+}
+
+.about__row--item:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -21.5px;
+    width: 557px;
+    height: 2px;
+    background: #ffefe7;
+    border-radius: 1px;
+    z-index: -1;
+}
+
+.about__row-name {
+    color: #48496a;
+    font-family: Sora, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.about__desc--bottom {
+    width: 391px;
+    margin-top: 46px;
+}
+
+.about__details {
+    margin-top: 32px;
+}
+
+.about__link {
+    position: relative;
+    color: #ff5d31;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1; /* 100% */
+}
+
+.about__link:hover {
+    cursor: pointer;
+}
+
+.about__link::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 86px;
+    height: 1.5px;
+    background: #ff5d31;
+    border-radius: 1px;
+    bottom: -5px;
+    margin: 0 auto;
 }
