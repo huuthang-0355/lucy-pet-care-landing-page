@@ -875,3 +875,264 @@ button {
     color: #fff;
     opacity: 1;
 }
+
+/* Choice */
+
+.choice {
+    margin-top: 130px;
+    padding: 86px 0;
+    background: #fff6ed;
+}
+
+.choice__heading {
+    text-align: center;
+}
+
+.choice__desc {
+    margin: 24px auto 0;
+    width: 709px;
+    text-align: center;
+}
+
+.choice__switch-wrap {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+}
+
+.choice__switch {
+    position: relative;
+}
+
+.choice__switch-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 276px;
+    height: 56px;
+    padding: 0 40px;
+    border: 1px solid #ff5b2e99;
+    border-radius: 99px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.choice__switch-label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 140px;
+    height: 100%;
+    background: #ff5b2e;
+    border-radius: inherit;
+}
+
+.choice__switch-value {
+    position: relative;
+    z-index: 1;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: #fff;
+}
+
+.choice__switch-input:checked + .choice__switch-label::before {
+    width: 131px;
+    left: auto;
+    right: 0;
+}
+
+.choice__switch-input:not(:checked)
+    + .choice__switch-label
+    .choice__switch-value:nth-of-type(2),
+.choice__switch-input:checked
+    + .choice__switch-label
+    .choice__switch-value:nth-of-type(1) {
+    color: #ff5b2e;
+}
+
+.choice__decor {
+    position: absolute;
+    bottom: 29px;
+    right: -110px;
+}
+
+.choice__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 44px;
+    margin-top: 56px;
+}
+
+.choice__card {
+    width: 302px;
+    padding: 30px 28px 43px;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.choice__card-rank {
+    color: #ff5b2e;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1; /* 100% */
+}
+
+.choice__card-quality {
+    margin-top: 8px;
+    color: #3f4065;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.choice__card-price {
+    display: block;
+    margin-top: 24px;
+    color: #000958;
+    font-family: Sora;
+    font-size: 3.4rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.choice__card-btn {
+    opacity: 1;
+    margin-top: 22px;
+    --height: 44px;
+    min-width: 246px;
+    color: #ff5b2e;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border-radius: 39px;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+}
+
+.choice__card-btn:hover {
+    color: #fff;
+    background: #ff5b2e;
+    opacity: 1;
+}
+
+.choice__card-list-features {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 24px;
+}
+
+.choice__card-feature {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1; /* 100% */
+}
+
+.choice__card-feature::before {
+    content: url(../icons/clear-check.svg);
+}
+
+.choice__card-feature--blur::before {
+    content: url(../icons/blur-check.svg);
+}
+
+/* Feedback */
+
+.feedback {
+    margin-top: 53px;
+}
+
+.feedback__inner {
+    display: flex;
+    align-items: center;
+}
+
+.feedback__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 44px;
+    margin-right: 70px;
+}
+
+.feedback__media {
+    width: 338px;
+    height: 507px;
+}
+
+.feedback__img-block {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    width: 274px;
+    flex-shrink: 0;
+    border-radius: 137px;
+    /* background: #ffda54; */
+    overflow: hidden;
+}
+
+.feedback__img-block::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    width: 274px;
+    height: 350px;
+    border-radius: 137px;
+    background: #ffda54;
+    z-index: -1;
+}
+
+.feedback__img {
+    width: 274px;
+    height: 427px;
+    object-fit: cover;
+}
+
+.feedback__review-wrap {
+    margin-left: 60px;
+}
+
+.feedback__review {
+    width: 553px;
+    margin-top: 24px;
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.56; /* 155.556% */
+}
+
+.feedback__customer {
+    position: relative;
+    margin-top: 34px;
+    margin-left: 28px;
+    color: #282828;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.feedback__customer::before {
+    content: "";
+    position: absolute;
+    left: -28px;
+    top: 6px;
+    width: 20px;
+    height: 2px;
+    background: #000;
+    border-radius: 1px;
+}
+
+.feedback__more {
+    text-align: center;
+}
